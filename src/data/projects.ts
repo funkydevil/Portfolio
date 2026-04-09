@@ -26,7 +26,20 @@ type ProjectFile = {
   featured?: boolean;
 };
 
-const assetUrl = (path: string) => new URL(path, import.meta.url).href;
+const projectAssets = import.meta.glob("../../assets/projects/**/*", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const assetUrl = (path: string) => {
+  const resolved = projectAssets[path];
+
+  if (!resolved) {
+    throw new Error(`Missing project asset: ${path}`);
+  }
+
+  return resolved;
+};
 
 const buildProject = (basePath: string, project: ProjectFile): ProjectEntry => {
   return {
