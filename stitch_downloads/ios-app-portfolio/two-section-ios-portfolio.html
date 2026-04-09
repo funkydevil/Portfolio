@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PRECISION | iOS Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#555557",
+                    "surface-container-lowest": "#000000",
+                    "on-surface-variant": "#acaaad",
+                    "tertiary-dim": "#e48fec",
+                    "tertiary-fixed-dim": "#e48fec",
+                    "primary-fixed": "#6c9fff",
+                    "on-primary-container": "#00214f",
+                    "surface": "#0e0e10",
+                    "secondary-dim": "#ff7353",
+                    "error": "#ff716c",
+                    "secondary": "#ff7353",
+                    "on-primary": "#002c65",
+                    "primary-fixed-dim": "#5191ff",
+                    "primary-container": "#6c9fff",
+                    "error-container": "#9f0519",
+                    "on-secondary": "#450800",
+                    "surface-tint": "#85adff",
+                    "on-secondary-container": "#fff0ed",
+                    "on-primary-fixed-variant": "#002a61",
+                    "on-tertiary-container": "#60136d",
+                    "surface-variant": "#252528",
+                    "secondary-fixed": "#ffc4b6",
+                    "on-error": "#490006",
+                    "on-secondary-fixed-variant": "#9d1e00",
+                    "on-tertiary-fixed-variant": "#6a1f76",
+                    "surface-container-highest": "#252528",
+                    "on-primary-fixed": "#000000",
+                    "surface-dim": "#0e0e10",
+                    "inverse-surface": "#fcf8fb",
+                    "tertiary": "#fab0ff",
+                    "error-dim": "#d7383b",
+                    "surface-container-low": "#131315",
+                    "surface-bright": "#2c2c2f",
+                    "surface-container-high": "#1f1f22",
+                    "outline-variant": "#48474a",
+                    "inverse-primary": "#005bc2",
+                    "on-tertiary": "#6b1f77",
+                    "tertiary-fixed": "#f39cfb",
+                    "on-secondary-fixed": "#6a1100",
+                    "secondary-container": "#b02604",
+                    "surface-container": "#19191c",
+                    "secondary-fixed-dim": "#ffb09e",
+                    "primary-dim": "#0070eb",
+                    "on-background": "#fefbfe",
+                    "primary": "#85adff",
+                    "background": "#0e0e10",
+                    "on-error-container": "#ffa8a3",
+                    "outline": "#767577",
+                    "on-surface": "#fefbfe",
+                    "tertiary-container": "#f39cfb",
+                    "on-tertiary-fixed": "#41004d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: #0e0e10; }
+        ::-webkit-scrollbar-thumb { background: #252528; border-radius: 10px; }
+        .glass-header { backdrop-filter: blur(20px); }
+        .mask-fade-right { mask-image: linear-gradient(to right, black 80%, transparent 100%); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-surface/60 backdrop-blur-[20px]">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<span class="text-xl font-black tracking-tighter text-on-surface">PRECISION</span>
+<div class="hidden md:flex items-center gap-10 font-inter tracking-tight text-sm font-medium">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#projects">Projects</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed px-6 py-2.5 rounded-full text-sm font-bold active:scale-95 duration-200 ease-out">
+                Get in Touch
+            </button>
+</div>
+</nav>
+<main>
+<!-- Section 1: Combined About/Contact/Hero Section -->
+<section class="relative py-20 px-8 bg-surface overflow-hidden" id="about">
+<!-- Ambient Background Decor -->
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -z-10 translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px] -z-10 -translate-x-1/2 translate-y-1/2"></div>
+<div class="max-w-7xl mx-auto space-y-24">
+<!-- Header Bio & Identity -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-surface-container-highest border border-outline-variant/15">
+<span class="material-symbols-outlined text-sm text-secondary">terminal</span>
+<span class="font-label text-[10px] uppercase tracking-[0.1em] font-bold text-on-surface-variant">iOS ARCHITECT &amp; ENGINEER</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-[0.9] text-on-surface">
+                            The Digital <span class="text-transparent bg-clip-text bg-gradient-to-tr from-primary to-primary-container">Architect.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-2xl">
+                            I am an iOS Developer based in San Francisco, obsessed with the intersection of elegant code and functional design. With over 6 years of experience, I build apps that don't just work—they feel alive.
+                        </p>
+<div class="flex flex-wrap gap-8 pt-4">
+<div>
+<h5 class="font-bold text-xs tracking-widest text-secondary uppercase mb-2">Connect</h5>
+<div class="flex gap-4 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">Twitter (X)</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-xs tracking-widest text-secondary uppercase mb-2">Location</h5>
+<p class="text-sm font-medium text-on-surface-variant">San Francisco, CA — Available Worldwide</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex justify-center lg:justify-end">
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-3xl bg-surface-container-highest overflow-hidden p-1 border border-outline-variant/20 shadow-2xl rotate-3">
+<img class="w-full h-full object-cover rounded-2xl" data-alt="Professional headshot of a software engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4YPE-UvvgWcmIX71AGD1WBP6irN16WAjiqNh8MpfnKSLs9l5VZffdMrJHiUBEKl9O6JwjXgYvcPLnSncj8xdwb_Y32NV07DTGLaYiiIXTcZ1vMmrPFd1Ydco9qgUJU4bkQPI3Y5NmamuI45HRvtetHV7dgrUeqV0MYj7fhvZ5xs9T1YIpeRwPooNfu9DQXxRd69f4ODiQpR4OuJrwl039BXt8DOOTB5J0zkBI7L7JGF9Y3uBzUGQo-kkyj_spCVXRflhXMhizC6I"/>
+</div>
+</div>
+</div>
+<!-- Integrated Skills & Contact Form -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Skills Grid -->
+<div class="lg:col-span-7 space-y-12">
+<h2 class="text-3xl font-black tracking-tighter text-on-surface">Engineering the Next Frontier.</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-high rounded-xl hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-2xl">developer_board</span>
+<h4 class="text-lg font-bold mb-1">Interface Engineering</h4>
+<p class="text-on-surface-variant text-xs leading-relaxed">SwiftUI &amp; UIKit expert with focus on fluid animations and custom transitions.</p>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-2xl">database</span>
+<h4 class="text-lg font-bold mb-1">Data Persistence</h4>
+<p class="text-on-surface-variant text-xs leading-relaxed">Architecting robust local storage using Core Data, Realm, and CloudKit.</p>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-2xl">bolt</span>
+<h4 class="text-lg font-bold mb-1">Performance Opt.</h4>
+<p class="text-on-surface-variant text-xs leading-relaxed">Profiling apps with Instruments to ensure 60fps scrolling and efficiency.</p>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-primary mb-4 text-2xl">hub</span>
+<h4 class="text-lg font-bold mb-1">System Architecture</h4>
+<p class="text-on-surface-variant text-xs leading-relaxed">MVVM, Clean Architecture, and modularity for scalable enterprise-grade apps.</p>
+</div>
+</div>
+</div>
+<!-- Integrated Contact Form -->
+<div class="lg:col-span-5">
+<div class="p-8 bg-surface-container-low rounded-3xl shadow-2xl border border-outline-variant/10">
+<h3 class="text-xl font-bold mb-6">Initiate Project</h3>
+<form action="#" class="space-y-4">
+<div class="space-y-1.5">
+<label class="text-[9px] font-black uppercase tracking-widest text-on-surface-variant ml-2">Identity</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl p-3.5 focus:ring-2 focus:ring-primary/40 text-on-surface transition-all text-sm" placeholder="Full Name" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-[9px] font-black uppercase tracking-widest text-on-surface-variant ml-2">Endpoint</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl p-3.5 focus:ring-2 focus:ring-primary/40 text-on-surface transition-all text-sm" placeholder="name@company.com" type="email"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-[9px] font-black uppercase tracking-widest text-on-surface-variant ml-2">Details</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-xl p-3.5 focus:ring-2 focus:ring-primary/40 text-on-surface transition-all text-sm" placeholder="Your app vision..." rows="3"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed py-3.5 rounded-xl font-bold text-md hover:scale-[1.01] transition-transform flex items-center justify-center gap-3" type="submit">
+                                    Send Signal
+                                    <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Projects Showcase Section -->
+<section class="py-24 bg-surface-container-lowest" id="projects">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter">Selected Deployments</h2>
+<p class="text-on-surface-variant text-sm max-w-xs">A collection of performance-driven iOS applications built with modern architectural patterns.</p>
+</div>
+<!-- Project Row 1 -->
+<div class="flex flex-col lg:flex-row items-center gap-16 py-12 border-b border-outline-variant/10">
+<div class="w-full lg:w-1/3 space-y-6">
+<div class="space-y-2">
+<span class="font-label text-xs tracking-widest text-secondary font-bold uppercase">Fintech Ecosystem</span>
+<h3 class="text-3xl font-bold tracking-tight">Vantage Portfolio</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            A high-fidelity asset tracking application using Combine for reactive data streams and SwiftUI for dynamic charting. Optimized for low-latency market updates.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high rounded-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">SwiftUI</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Combine</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">GRDB</span>
+</div>
+</div>
+<div class="w-full lg:w-2/3 overflow-x-auto mask-fade-right scroll-smooth hide-scrollbar">
+<div class="flex gap-8 pb-8 min-w-max">
+<!-- Video Preview -->
+<div class="w-72 h-[580px] rounded-[3rem] bg-surface-container-highest overflow-hidden border-[8px] border-surface-container-lowest shadow-2xl relative group">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center z-10 group-hover:bg-black/20 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-2xl">
+<span class="material-symbols-outlined text-4xl fill-1">play_arrow</span>
+</div>
+</div>
+<img class="w-full h-full object-cover grayscale-[0.5] blur-sm" data-alt="Video preview thumbnail of Vantage Portfolio app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDsSRehpb2viiQ_RKD7YUFmAcVvy4db0P_rhcbyW42aZIRekX4qW07wrXTISMzgPum6EEegul48Olxv0elxWiOZ4Jt1VVN4C7FiwK7GwRiJPZhJub6iq0snAVRyYLVF_dUYes27UauawTQ-YHOXOeo6mh4ciILB2bvxhlgIjiOxyG2EjmQlNy2jaZm6bAvTZOm-hUeyPo9M8Qc5A1OLHceW6w6JccZgrL8QN5cDriRXExPFow604es8USSZLuwWsqZPGXdNkIRBiU"/>
+</div>
+<!-- Screenshots -->
+<div class="w-72 h-[580px] rounded-[3rem] bg-surface-container-highest overflow-hidden border-[8px] border-surface-container-lowest shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Screenshot of a sleek dark mode financial app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDsSRehpb2viiQ_RKD7YUFmAcVvy4db0P_rhcbyW42aZIRekX4qW07wrXTISMzgPum6EEegul48Olxv0elxWiOZ4Jt1VVN4C7FiwK7GwRiJPZhJub6iq0snAVRyYLVF_dUYes27UauawTQ-YHOXOeo6mh4ciILB2bvxhlgIjiOxyG2EjmQlNy2jaZm6bAvTZOm-hUeyPo9M8Qc5A1OLHceW6w6JccZgrL8QN5cDriRXExPFow604es8USSZLuwWsqZPGXdNkIRBiU"/>
+</div>
+<div class="w-72 h-[580px] rounded-[3rem] bg-surface-container-highest overflow-hidden border-[8px] border-surface-container-lowest shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="User profile dashboard of a mobile app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs772S1tp40l8Ic2Y5_m9hgHSRrKGhAT2y5JFe7oFe2doiSIaZkRG6fPNyfD7USMx5FwIk-xjVF45J35UbKqpWiwGJnp-s7Ulv0yPaMPftR5iWhE3wK-LpZmvHfvpCk09LGr1rDpgAoXwQ4TEGd7Aj1_U9zfRToaBqfxgBGmC_EPOOcfsJ4nknjCeB_Rj8wl2ZHVF9uxvITv-6DFztzm_auXuAmmS7WAFYEEd5ZqJ173CMxmIQADOWi2EEKS49Sho10g2bvuyEKm0"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Row 2 -->
+<div class="flex flex-col lg:flex-row-reverse items-center gap-16 py-12">
+<div class="w-full lg:w-1/3 space-y-6">
+<div class="space-y-2 text-right lg:text-left">
+<span class="font-label text-xs tracking-widest text-secondary font-bold uppercase">Productivity OS</span>
+<h3 class="text-3xl font-bold tracking-tight">Kinetic Workflow</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-right lg:text-left">
+                            A spatial productivity tool leveraging Core Data for deep persistence and custom gesture engines to redefine task management on iOS.
+                        </p>
+<div class="flex flex-wrap gap-2 justify-end lg:justify-start">
+<span class="px-3 py-1 bg-surface-container-high rounded-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Swift</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Core Data</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">UIKit</span>
+</div>
+</div>
+<div class="w-full lg:w-2/3 overflow-x-auto mask-fade-right scroll-smooth hide-scrollbar">
+<div class="flex gap-8 pb-8 min-w-max">
+<!-- Video Preview -->
+<div class="w-72 h-[580px] rounded-[3rem] bg-surface-container-highest overflow-hidden border-[8px] border-surface-container-lowest shadow-2xl relative group">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center z-10 group-hover:bg-black/20 transition-all">
+<div class="w-16 h-16 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-2xl">
+<span class="material-symbols-outlined text-4xl fill-1">play_arrow</span>
+</div>
+</div>
+<img class="w-full h-full object-cover grayscale-[0.5] blur-sm" data-alt="Video preview thumbnail of Kinetic Workflow app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV0_9K6NFUUaUcpnaJx6MXIuDKSxL2QJmVxJGmnHmieve4umyI1Yqxcj5qrP_dLg3YyEv_-gtXGICIpLYetSMfzwmQLbVVCHHhAxvQnyjd-oLJoJfmV9d5n7jifiz-cUFkRATAp0bYlCTyZcf083ZWKA-y76Cowia1ReGgA1BxF22ueK98OJBblsVCNXTfsgIAC_23IqpPyRPndwdimAcI-93I3sasUIOMkIDyKCqEdDtHSkZioR3uCT7g5p_CsQVDBwYRSflk08g"/>
+</div>
+<!-- Screenshots -->
+<div class="w-72 h-[580px] rounded-[3rem] bg-surface-container-highest overflow-hidden border-[8px] border-surface-container-lowest shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Task board interface on an iPhone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV0_9K6NFUUaUcpnaJx6MXIuDKSxL2QJmVxJGmnHmieve4umyI1Yqxcj5qrP_dLg3YyEv_-gtXGICIpLYetSMfzwmQLbVVCHHhAxvQnyjd-oLJoJfmV9d5n7jifiz-cUFkRATAp0bYlCTyZcf083ZWKA-y76Cowia1ReGgA1BxF22ueK98OJBblsVCNXTfsgIAC_23IqpPyRPndwdimAcI-93I3sasUIOMkIDyKCqEdDtHSkZioR3uCT7g5p_CsQVDBwYRSflk08g"/>
+</div>
+<div class="w-72 h-[580px] rounded-[3rem] bg-surface-container-highest overflow-hidden border-[8px] border-surface-container-lowest shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Calendar view in productivity mobile app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf-LsnJvn7h5isc7EM_qxZbAITBl29cEN7xyBWyd38dCZZ9I2NDk4jL9EgxPwC9kIT6BwCJsygB8mTzmyN9Fp6rsH5Ccw898mCTvOp4mrTDe697MsY81AhQ1zQqr0Se3IxRg258xs53Tl_Za3By7KEEwyqTbfwbPHcwFTK0OjWOPQUOc1c7mBw_gezOWTGB_2Ri04dhd3lcAP9K5uSSq9WvY7c19J1JhUcAXy_--o2n8aNLh5oxpCJt2AdkpgEys0eOz_j5HeyjIs"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface w-full py-12 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center">
+<p class="font-inter text-[10px] uppercase tracking-[0.05em] font-medium text-[#acaaad] mb-6 md:mb-0">
+                © 2024 THE DIGITAL ARCHITECT. ENGINEERED FOR IOS.
+            </p>
+<div class="flex gap-8 items-center">
+<a class="font-inter text-[10px] uppercase tracking-[0.05em] font-medium text-[#acaaad] hover:text-[#ff7353] transition-colors duration-300" href="#">GitHub</a>
+<a class="font-inter text-[10px] uppercase tracking-[0.05em] font-medium text-[#acaaad] hover:text-[#ff7353] transition-colors duration-300" href="#">LinkedIn</a>
+<a class="font-inter text-[10px] uppercase tracking-[0.05em] font-medium text-[#acaaad] hover:text-[#ff7353] transition-colors duration-300" href="#">Source Code</a>
+</div>
+</div>
+</footer>
+</body></html>

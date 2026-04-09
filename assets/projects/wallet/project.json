@@ -1,0 +1,13 @@
+{
+  "id": "wallet",
+  "kicker": "Crypto Wallet",
+  "title": "Crypto Wallet",
+  "summary": "Crypto wallet with bright utility surfaces and shortcut-driven home screen.",
+  "featured": true,
+  "cover": "1.png",
+  "images": ["1.png", "2.png", "3.png", "4.png", "5.png"],
+  "video": {
+    "source": "video.mov"
+  },
+  "links": []
+}

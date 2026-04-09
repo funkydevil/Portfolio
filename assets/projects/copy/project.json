@@ -1,0 +1,13 @@
+{
+  "id": "tt",
+  "kicker": "Copytrading App",
+  "title": "Copytrading App",
+  "summary": "Dark-mode copytrading app with portfolio, trader following, and profit tracking.",
+  "featured": true,
+  "cover": "1.png",
+  "images": ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png"],
+  "video": {
+    "source": "video.mov"
+  },
+  "links": []
+}
