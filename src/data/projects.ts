@@ -1,4 +1,5 @@
 import meditationProject from "../../assets/projects/meditation/project.json";
+import multiwalletProject from "../../assets/projects/multiwallet/project.json";
 import walletProject from "../../assets/projects/wallet/project.json";
 import copyProject from "../../assets/projects/copy/project.json";
 
@@ -67,6 +68,7 @@ const buildProject = (basePath: string, project: ProjectFile): ProjectEntry => {
 
 export const portfolioProjects: ProjectEntry[] = [
   buildProject("../../assets/projects/copy", copyProject as ProjectFile),
-  buildProject("../../assets/projects/wallet", walletProject as ProjectFile),
+  buildProject("../../assets/projects/multiwallet", multiwalletProject as ProjectFile),
   buildProject("../../assets/projects/meditation", meditationProject as ProjectFile),
+  buildProject("../../assets/projects/wallet", walletProject as ProjectFile),
 ];

@@ -1,0 +1,13 @@
+{
+  "id": "multiwallet",
+  "kicker": "Multi-Chain Wallet",
+  "title": "Multiwallet",
+  "summary": "Multi-chain crypto wallet with token management, address actions, and cross-network bridge flows.",
+  "featured": true,
+  "cover": "1.PNG",
+  "images": ["1.PNG", "2.PNG", "3.PNG", "4.PNG", "5.PNG", "6.PNG", "7.PNG"],
+  "video": {
+    "source": "video.mov"
+  },
+  "links": []
+}
