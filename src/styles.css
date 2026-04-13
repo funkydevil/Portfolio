@@ -389,10 +389,13 @@ code {
 
 .project-list {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .project-row {
   display: grid;
+  width: 100%;
+  min-width: 0;
   grid-template-columns: 270px minmax(0, 1fr);
   gap: 48px;
   align-items: center;
@@ -423,6 +426,8 @@ code {
 
 .media-strip-shell {
   position: relative;
+  min-width: 0;
+  width: 100%;
 }
 
 .media-strip {
