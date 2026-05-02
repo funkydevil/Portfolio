@@ -67,8 +67,8 @@ const buildProject = (basePath: string, project: ProjectFile): ProjectEntry => {
 };
 
 export const portfolioProjects: ProjectEntry[] = [
-  buildProject("../../assets/projects/copy", copyProject as ProjectFile),
   buildProject("../../assets/projects/multiwallet", multiwalletProject as ProjectFile),
+  buildProject("../../assets/projects/copy", copyProject as ProjectFile),
   buildProject("../../assets/projects/meditation", meditationProject as ProjectFile),
   buildProject("../../assets/projects/wallet", walletProject as ProjectFile),
 ];
